@@ -19,6 +19,12 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        'http://api.accorddev.com/usuario',
+        'http://api.accorddev.com/reserva',
+        'http://api.accorddev.com/reserva/*',
+        'http://api.accorddev.com/persona',
+        'http://api.accorddev.com/persona/*',
+        'http://api.accorddev.com/pago',
+        'http://api.accorddev.com/pago/*'
     ];
 }
